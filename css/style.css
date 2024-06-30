@@ -1,0 +1,59 @@
+body {
+  background-color: #f7ecde;
+}
+.books h1 {
+  font-family: "Pacifico", cursive;
+  position: relative;
+  display: inline-block;
+  font-size: 50px;
+  font-weight: 500;
+}
+.books h1::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  background-color: rgba(255, 166, 0, 0.691);
+  z-index: -12;
+  bottom: 0;
+}
+.books h1:hover:before {
+  height: 40px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.title-container {
+  color: RGB(33, 37, 41);
+  border-top: 2px dotted black;
+  margin-top: 20px;
+  /* border-bottom: none; */
+}
+
+.site-heading {
+  font-size: 25px;
+  font-weight: 500;
+  color: #53a658;
+  font-family: Righteous cursive;
+}
+
+.form-input label {
+  padding: 10px 0;
+}
+.form-input {
+  border-bottom: 2px dotted black;
+}
+.form-input button {
+  /* width: 20%; */
+  margin: auto;
+  padding: 8px 60px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.error {
+  color: red;
+  display: none;
+}

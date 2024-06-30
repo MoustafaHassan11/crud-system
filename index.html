@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- web fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="container">
+      <div class="row">
+        <div class="col-12 py-5 books container text-center">
+          <h1 class="m-5">Bookmarker</h1>
+          <div
+            class="d-flex justify-content-center align-items-center py-4 text-center title-container"
+          >
+            <i class="fa-solid fa-book-bookmark"></i>
+            <h2 class="px-2 site-heading">Bookmark your favorite sites</h2>
+            <i class="fa-solid fa-book-bookmark"></i>
+          </div>
+          <div class="d-flex flex-column py-3 form-input text-start">
+            <label for="Site_name"
+              ><i class="fa-solid fa-book-bookmark"></i> Site Name</label
+            >
+            <input id="Site_name" type="text" class="form-control" />
+            <label for="Site_url"
+              ><i class="fa-solid fa-link-slash"></i> Site URL</label
+            >
+            <input id="Site_url" type="text" class="form-control required" />
+            <span class="error" id="urlError">Please enter a valid URL.</span>
+            <br />
+            <button class="btn btn-danger" onclick="addSite()">Submit</button>
+          </div>
+        </div>
+        <table class="table text-center">
+          <thead>
+            <tr>
+              <th scope="col">Index</th>
+              <th scope="col">Website Name</th>
+              <th scope="col">Visit</th>
+              <th scope="col">Delete</th>
+            </tr>
+          </thead>
+          <tbody id="bookData">
+            <!-- Dynamically filled rows will go here -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
